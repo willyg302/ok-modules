@@ -1,0 +1,9 @@
+[
+	"bower",
+	"easy_install",
+	"make",
+	"node",
+	"npm",
+	"pip",
+	"virtualenv"
+]
