@@ -1,6 +1,5 @@
 [
 	"bower",
-	"easy_install",
 	"make",
 	"node",
 	"npm",

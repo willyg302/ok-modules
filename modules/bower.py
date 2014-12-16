@@ -1,10 +1,10 @@
 def check():
-	return strap.ping('bower --version')
+	return ok.ping('bower --version')
 
 def install():
-	strap.npm('install -g bower')
+	ok.npm('install -g bower')
 
 def run(command, root='.'):
-	with strap.root(root):
-		strap._shell('bower {}'.format(command))
-	return strap
+	with ok.root(root):
+		ok._shell('bower {}'.format(command))
+	return ok
