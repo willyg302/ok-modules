@@ -20,7 +20,7 @@ def run(path):
 			ok.log('Creating virtual environment at {}...'.format(os.path.basename(path)))
 			ok.shell('virtualenv {}'.format(path), force_global=True)
 
-		ok._env = utils.normalize_path('{}/{}'.format(path, 'Scripts' if platform.system() == 'Windows' else 'bin'))
+		ok.env = utils.normalize_path('{}/{}'.format(path, 'Scripts' if platform.system() == 'Windows' else 'bin'))
 		yield
 	finally:
-		ok._env = None
+		ok.env = None
