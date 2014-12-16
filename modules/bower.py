@@ -6,5 +6,5 @@ def install():
 
 def run(command, root='.'):
 	with ok.root(root):
-		ok._shell('bower {}'.format(command))
+		ok.shell('bower {}'.format(command))
 	return ok

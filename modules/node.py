@@ -2,12 +2,12 @@ def check():
 	return ok.ping('node --version')
 
 def install():
-	raise OkException('''Installation must be done manually.
+	raise utils.OkException('''Installation must be done manually.
 Please visit http://nodejs.org/ for installation instructions.''')
 
 def run(command, module=False):
 	if module:
-		ok._shell('node_modules/.bin/{}'.format(command))
+		ok.shell('node_modules/.bin/{}'.format(command))
 	else:
-		ok._shell('node {}'.format(command))
+		ok.shell('node {}'.format(command))
 	return ok
