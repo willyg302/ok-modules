@@ -1,1 +1,1 @@
-["bower.py", "freeze.py", "lein.py", "make.py", "node.py", "npm.py", "pip.py", "virtualenv.py"]
+["bower", "freeze", "lein", "make", "node", "npm", "pip", "virtualenv"]

@@ -10,4 +10,4 @@ def install():
 def default():
 	'''Rebuild the registry'''
 	with open('registry.json', 'w') as f:
-		json.dump(sorted(os.listdir('modules')), f)
+		json.dump(sorted([m[:-3] for m in os.listdir('modules')]), f)
