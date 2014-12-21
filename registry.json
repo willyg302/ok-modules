@@ -1,9 +1,1 @@
-[
-	"bower",
-	"freeze",
-	"make",
-	"node",
-	"npm",
-	"pip",
-	"virtualenv"
-]
+["bower.py", "freeze.py", "lein.py", "make.py", "node.py", "npm.py", "pip.py", "virtualenv.py"]
