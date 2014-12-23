@@ -1,9 +1,15 @@
+'''A package manager for Node
+
+Website: https://www.npmjs.com/
+
+Run any regular NPM command.
+'''
+
 def check():
 	return ok.ping('npm --version')
 
 def install():
-	raise utils.OkException('''Installation must be done manually.
-Please visit http://nodejs.org/ for installation instructions.''')
+	ok.node('--version')  # NPM is bundled with Node, so we can just ping it
 
 def run(command):
 	ok.shell('npm {}'.format(command))

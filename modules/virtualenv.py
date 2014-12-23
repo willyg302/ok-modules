@@ -1,3 +1,13 @@
+'''A tool to create isolated Python environments
+
+Website: https://virtualenv.readthedocs.org/en/latest/
+
+This module provides a context manager, for use with the Python (b with)
+statement. Provide a path to create the virtual environment at.
+
+Note that any ok commands inside the (b with) statement will execute
+relative to the virtual environment.
+'''
 import os
 import contextlib
 import platform
@@ -13,7 +23,6 @@ def install():
 def run(path):
 	try:
 		path = utils.normalize_path(path)
-
 		# Check if our virtual environment is already created, and create if not
 		ok.log('Checking virtual environment')
 		if not os.path.isdir(path):

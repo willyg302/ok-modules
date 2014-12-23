@@ -1,3 +1,9 @@
+'''A tool for installing and managing Python packages
+
+Website: https://pypi.python.org/pypi/pip
+
+Run any regular pip command.
+'''
 import os
 import shutil
 import tempfile

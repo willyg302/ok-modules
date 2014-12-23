@@ -1,1 +1,1 @@
-["bower", "freeze", "lein", "make", "node", "npm", "pip", "virtualenv"]
+["bower", "freeze", "lein", "make", "mix", "node", "npm", "pip", "virtualenv"]

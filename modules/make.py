@@ -1,3 +1,11 @@
+'''GNU Make
+
+Website: http://www.gnu.org/software/make/
+
+Run any regular Make command. You can also omit the command, which is the
+same as simply running (b make).
+'''
+
 def check():
 	return ok.ping('make --version')
 

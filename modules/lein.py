@@ -1,3 +1,10 @@
+'''For automating Clojure projects without setting your hair on fire
+
+Website: http://leiningen.org/
+
+Run any regular Leiningen command.
+'''
+
 def check():
 	return ok.ping('lein --version')
 

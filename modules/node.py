@@ -1,3 +1,11 @@
+'''Evented I/O for V8 JavaScript
+
+Website: http://nodejs.org/
+
+Run any regular Node command. You may also run a locally installed Node
+module, for example Gulp, by passing (b module=True).
+'''
+
 def check():
 	return ok.ping('node --version')
 
