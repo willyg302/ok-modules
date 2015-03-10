@@ -22,7 +22,7 @@ def install():
 			get_pip = os.path.join(tmpdir, 'get-pip.py')
 
 			# Download get-pip.py and run it
-			urllib.urlretrieve('https://bootstrap.pypa.io/get-pip.py', get_pip)
+			utils.urllib.urlretrieve('https://bootstrap.pypa.io/get-pip.py', get_pip)
 			ok.shell('python {}'.format(get_pip))
 		finally:
 			# Clean up our temporary working directory
