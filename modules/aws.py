@@ -1,4 +1,4 @@
-'''The AWS Command Line Interface (CLI)
+'''The AWS Command Line Interface
 
 Website: http://aws.amazon.com/cli/
 
